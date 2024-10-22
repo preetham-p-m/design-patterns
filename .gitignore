@@ -1,3 +1,11 @@
+# Build paths
 bin
 target
+
+# Mac generated files
 .DS_STORE
+
+# Eclipse files
+.classpath
+.project
+.settings
