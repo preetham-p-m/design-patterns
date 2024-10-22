@@ -13,20 +13,12 @@ public class UserDTO {
     private String age;
     // #endregion
 
-    // #region Constructor
-    public UserDTO(String name, String address, String age) {
-        this.name = name;
-        this.address = address;
-        this.age = age;
-    }
-    // #endregion
-
     // #region Getters, Setters, toString
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
@@ -34,7 +26,7 @@ public class UserDTO {
         return address;
     }
 
-    public void setAddress(String address) {
+    private void setAddress(String address) {
         this.address = address;
     }
 
@@ -42,7 +34,7 @@ public class UserDTO {
         return age;
     }
 
-    public void setAge(String age) {
+    private void setAge(String age) {
         this.age = age;
     }
 
@@ -90,7 +82,10 @@ public class UserDTO {
         }
 
         public UserDTO build() {
-            this.userWebDTO = new UserDTO(firstName + " " + lastName, address, age);
+            this.userWebDTO = new UserDTO();
+            this.userWebDTO.setName(this.firstName + " " + this.lastName);
+            this.userWebDTO.setAge(this.age);
+            this.userWebDTO.setAddress(this.address);
             return this.userWebDTO;
         }
 
