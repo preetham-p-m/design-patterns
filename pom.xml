@@ -37,5 +37,17 @@
 
   <dependencies>
     <!-- Add your dependencies here if needed -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-base</artifactId>
+      <version>22</version>
+      <!-- <classifier>mac</classifier> Adjust this to your OS (win, mac, or linux) -->
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>22</version>
+      <!-- <classifier>mac</classifier> -->
+    </dependency>
   </dependencies>
 </project>

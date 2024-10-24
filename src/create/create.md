@@ -13,3 +13,9 @@ When to use,
 When to use,
 
 - Object creation process if complex.
+
+## Prototype
+
+When to use,
+
+- we have complex object which is costly to create
