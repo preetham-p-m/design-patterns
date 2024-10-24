@@ -1,0 +1,21 @@
+package create.abstract_factory.aws;
+
+import create.abstract_factory.interfaces.Storage;
+
+public class S3Storage implements Storage {
+
+    public S3Storage(int capacityInMib) {
+        System.out.println("Allocated " + capacityInMib + " in S3");
+    }
+
+    @Override
+    public String getId() {
+        return "S3Storage_1";
+    }
+
+    @Override
+    public String toString() {
+        return "S3Storage";
+    }
+
+}
